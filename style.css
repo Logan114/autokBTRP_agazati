@@ -1,0 +1,66 @@
+body h1 {
+    color: #018668;
+}
+nav li {
+    display: inline;
+    padding: 10px;
+
+    
+}
+nav li a {
+    color: white;
+}
+nav ul {
+    background-color: #018668;
+    padding: 18px;
+
+}
+aside{
+    grid-area: a;
+}
+aside li {
+    
+    list-style-type: none;
+}
+
+aside img {
+    max-width: 80%;
+}
+
+.benz {
+    grid-area: benz;
+}
+.ford {
+    grid-area: ford;
+
+}
+
+.benz img{
+    max-width: 50%;
+    grid-area: bi;
+}
+
+.ford img {
+    max-width: 50%;
+    margin: 10px;
+    grid-area: fi;
+}
+
+article {
+    width: 100%;
+    grid-area: art;
+    display: grid;
+    grid-template-rows: 3fr 3fr;
+    grid-template-areas: 
+    "ford benz"
+    ;
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "art a"
+    ;
+}
